@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite" parallel="false">
-    <test name="Test">
+<suite name="David Selenium Suite" parallel="methods" thread-count="2">
+    <test name="David Test">
         <classes>
-            <class name="com.david.selenium.drivers.DriverTest"/>
-            <class name="com.david.selenium.scroll.ScrollTest"/>
+            <!--<class name="com.david.selenium.parallel.ParallelBrowserTest"/>-->
+            <class name="com.david.selenium.parallel.ParallelMethodTest"/>
+            <!--<class name="com.david.selenium.drivers.DriverTest"/>-->
+            <!--<class name="com.david.selenium.scroll.ScrollTest"/>-->
         </classes>
     </test>
 </suite>
